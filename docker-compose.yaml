@@ -7,7 +7,7 @@ services:
       - '4000:4000'
     volumes:
       - ./api:/app
-      - ./home/ubuntu/dev/projects/Docker_Course/app/node_modules
+      - /home/ubuntu/dev/projects/Docker_Course/app/node_modules
   myblog:
     build: ./myblog
     container_name: myblog_c
