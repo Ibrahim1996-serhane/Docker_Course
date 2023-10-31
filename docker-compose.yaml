@@ -13,4 +13,7 @@ services:
     container_name: myblog_c
     ports:
       - '3000:3000'
+    volumes:
+      - ./myblog:/app
+      - /home/ubuntu/dev/projects/Docker_Course/app/node_modules
     stdin_open: true
