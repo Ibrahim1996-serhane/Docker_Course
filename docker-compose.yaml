@@ -7,7 +7,6 @@ services:
       - '4000:4000'
     volumes:
       - ./api:/app/api
-      - /home/ubuntu/dev/projects/Docker_Course/app/api/node_modules
   myblog:
     build: ./myblog
     container_name: myblog_c
@@ -15,5 +14,4 @@ services:
       - '3000:3000'
     volumes:
       - ./myblog:/app/myblog
-      - /home/ubuntu/dev/projects/Docker_Course/app/myblog/node_modules
     stdin_open: true
