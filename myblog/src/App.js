@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1> Docker 1.2 </h1>
+        <h1> Docker 1.3 </h1>
         {blogs && blogs.map(blog => (
           <div key={blog.id}>{blog.title}</div>
         ))}
